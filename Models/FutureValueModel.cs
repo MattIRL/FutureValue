@@ -12,7 +12,7 @@ namespace FutureValue.Models
         public decimal YearlyInterestRate {get; set;}
         
         [Required(ErrorMessage = "Please a number of years.")]
-        [Range(1, 500, ErrorMessage = "Number of years must be between 1 and 50.")]
+        [Range(1, 50, ErrorMessage = "Number of years must be between 1 and 50.")]
         public int Years { get; set; }
         
         public decimal CalculateFutureValue()
